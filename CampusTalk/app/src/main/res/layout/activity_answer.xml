@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asked on"
+
+                android:layout_marginLeft="8dp"
+                android:textColor="#BDBDBD"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tue, 12 Nov 2015"
+                android:layout_marginLeft="8dp"
+                android:textColor="#BDBDBD"
+                android:id="@+id/text_asked"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What should I do after completing my Bachelor's degree?"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:drawableLeft="@drawable/qletter"
+            android:id="@+id/question"
+            android:padding="5dp"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/answer_user"
+            android:drawableTint="#BDBDBD"
+            android:padding="2dp"
+            android:text=" Pooja Patel \u002C"
+            android:gravity="center_vertical"
+            android:textColor="#BDBDBD"
+            android:id="@+id/tv_name"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semeseter \u002C"
+            android:textColor="#BDBDBD"
+            android:id="@+id/tv_semester"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Department"
+            android:textColor="#BDBDBD"
+            android:id="@+id/tv_department"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BDBDBD"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/ansRecyclerView">
+
+        </android.support.v7.widget.RecyclerView>
+
+     <TextView
+         android:padding="8dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:text="Oops! No answers available "
+         android:textColor="#BDBDBD"
+         android:id="@+id/tv_noAnswer"
+         android:visibility="gone"
+         android:textSize="16dp"/>
+    </RelativeLayout>
+</LinearLayout>

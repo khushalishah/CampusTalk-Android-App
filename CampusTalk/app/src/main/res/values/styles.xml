@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:buttonStyle">@style/ButtonAppButtonTheme</item>
+        <item name="android:imageButtonStyle">@style/ImageButtonAppButtonTheme</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.ActionBar" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:buttonStyle">@style/ButtonAppButtonTheme</item>
+        <item name="android:imageButtonStyle">@style/ImageButtonAppButtonTheme</item>
+
+    </style>
+
+    <style name="TextViewStyle" parent="TextAppearance.AppCompat.Medium">
+
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+    <style name="ButtonAppButtonTheme" parent="android:Widget.Button">
+        <item name="android:background">@drawable/appbuttontheme_btn_default_holo_light</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">64dip</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ImageButtonAppButtonTheme" parent="android:Widget.ImageButton">
+        <item name="android:background">@drawable/appbuttontheme_btn_default_holo_light</item>
+    </style>
+    <!--<style name="AlertDialogTheme" parent="android:Theme.Dialog">
+        <item name="android:dialogTitle">@color/colorPrimary</item>
+    </style>-->
+</resources>

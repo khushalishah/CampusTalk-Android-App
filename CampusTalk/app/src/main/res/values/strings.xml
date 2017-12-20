@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Campus Talk</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string-array name="department">
+
+        <item>Mechanical</item>
+        <item>Electrical</item>
+        <item>Civil</item>
+        <item>Computer</item>
+        <item>IT</item>
+        <item>E&amp;C</item>
+        <item>I&amp;C</item>
+        <item>Environment</item>
+        <item>Textile</item>
+        <item>Plastic</item>
+        <item>Rubber</item>
+        <item>Chemical</item>
+        <item>Bio Medical</item>
+        <item>Applied Mechanics</item>
+        <item>General</item>
+
+    </string-array>
+
+    <string-array name="semester">
+
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+
+    </string-array>
+    <string-array name="options">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="categories">
+        <item>Art</item>
+        <item>Literature</item>
+        <item>Photography</item>
+        <item>Technical</item>
+    </string-array>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_login_in">Login</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_question">Ask &amp; Learn</string>
+    
+    <string name="title_activity_notice">Notices</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="url">/AndroidServices</string>
+    <string name="imageUrl">/ImageServlet</string>
+    <string name="downloadDoc">/DownloadServlet</string>
+    <string name="config_settings">CONFIG_FILE</string>
+
+    <string-array name="noticeTypes">
+
+        <item>VP</item>
+        <item>NSS</item>
+        <item>NCC</item>
+        <item>Departmental</item>
+        <item>TPO</item>
+
+    </string-array>
+</resources>

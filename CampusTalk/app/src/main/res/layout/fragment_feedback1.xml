@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TableRow android:padding="8dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Department :"
+                    android:id="@+id/tv_department" />
+                <Spinner
+                    android:layout_weight="9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/department"
+                    android:id="@+id/sp_department">
+                </Spinner>
+            </TableRow>
+
+            <TableRow android:padding="8dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Semester :"
+                    android:id="@+id/tv_semester" />
+                <Spinner
+                    android:layout_weight="9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/semester"
+                    android:id="@+id/sp_semester">
+                </Spinner>
+            </TableRow>
+
+            <TableRow android:padding="8dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Division :"
+                    android:id="@+id/tv_division"/>
+                <EditText
+                    android:layout_weight="9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_division" />
+
+            </TableRow>
+
+            <TableRow android:padding="8dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name of Teacher :"
+                    android:id="@+id/tv_teacher"/>
+                <EditText
+                    android:layout_weight="9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_teacher" />
+            </TableRow>
+
+            <TableRow android:padding="8dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course Code :"
+                    android:id="@+id/tv_courseCode"
+                    />
+                <EditText
+                    android:layout_weight="9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_courseCode"
+                    android:inputType="number"/>
+
+            </TableRow>
+            <TableRow android:padding="8dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course Title :"
+                    android:id="@+id/title"/>
+                <EditText
+                    android:layout_weight="9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_title" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TableRow android:padding="8dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="1.The teacher completes the entire syllabus in time."/>
+
+            <Spinner android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/options"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/sp_ans1"></Spinner>
+
+        </TableRow>
+
+            <TableRow android:padding="8dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="2.The teacher discusses topics and interacts in the class."/>
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/options"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/sp_ans2"></Spinner>
+
+            </TableRow>
+
+            <TableRow android:padding="8dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="3.The teacher communicates clearly and inspires me by his teaching."/>
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/options"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/sp_ans3"></Spinner>
+
+            </TableRow>
+
+            <TableRow android:padding="8dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="4.The teacher is punctual in the class."/>
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/options"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/sp_ans4"></Spinner>
+
+            </TableRow>
+
+            <TableRow android:padding="8dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="5.The teacher comes well prepared for the class."/>
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/options"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/sp_ans5"></Spinner>
+
+            </TableRow>
+
+            <TableRow android:padding="8dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="6.The teacher encourages participation and discussion in the class."/>
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/options"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/sp_ans6"></Spinner>
+
+            </TableRow>
+
+            <TableRow android:padding="8dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="7.The teacher uses modern teaching aids,handouts,suitable references,PPTs,web-resources etc."/>
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/options"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/sp_ans7"></Spinner>
+
+            </TableRow>
+
+            <TableRow android:padding="8dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="8.The teacher's attitude towards the students is friendly and helpful."/>
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/options"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/sp_ans8"></Spinner>
+
+            </TableRow>
+
+            <TableRow android:padding="8dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="9.The teacher is available and accessible in the department."/>
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/options"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/sp_ans9"></Spinner>
+
+            </TableRow>
+
+            <TableRow android:padding="8dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="10.The evaluation process is fair and unbiased."/>
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/options"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/sp_ans10"></Spinner>
+
+            </TableRow>
+
+            <TableRow android:padding="8dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="11.Regular and timely feedback is given on our performance."/>
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/options"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/sp_ans11"></Spinner>
+
+            </TableRow>
+
+            <TableRow android:padding="8dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="12.Periodical assessments are conducted as per schedule."/>
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/options"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/sp_ans12"></Spinner>
+
+            </TableRow>
+
+            <TableRow android:padding="8dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="13.I have learn and understood the subject material/s in this course."/>
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/options"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/sp_ans13"></Spinner>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comments :"/>
+
+            <EditText
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_comment"/>
+        </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:id="@+id/btn_submit"
+                android:layout_gravity="center_horizontal"
+               />
+
+    </LinearLayout>
+</ScrollView>
